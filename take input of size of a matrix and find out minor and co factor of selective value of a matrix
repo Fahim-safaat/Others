@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main()
 {
 
@@ -7,6 +6,11 @@ int main()
     printf("Enter number of rows and columns: ");
     scanf("%d %d", &rows, &cols);
 
+    if(rows!=cols)
+    {
+        printf("INVALID");
+    }
+    else{
     int matrix[rows + 1][cols + 1];
     printf("Enter elements of the matrix:\n");
     for (i = 1; i <= rows; i++)
@@ -52,7 +56,6 @@ int main()
         printf("\n");
     }
 
-    printf("Co factor:\n");
     int mainDia = 1, secDia = 1;
     for (int i = 1; i < rows; ++i)
     {
@@ -65,7 +68,7 @@ int main()
             }
         }
     }
-    printf("main diagonal = %d\n", mainDia);
+    printf("\nmain diagonal = %d\n", mainDia);
     for (int i = 1; i < rows; ++i)
     {
 
@@ -85,8 +88,12 @@ int main()
         sign = sign * (-1);
     }
     int ans = sign * (mainDia - secDia);
+    int asn = (mainDia - secDia);
 
+    printf("\nMinor = %d\n", asn);
     printf("co factor = %d\n", ans);
 
+    }
+    getch();
     return 0;
 }
