@@ -68,5 +68,26 @@ printf("\n");
     printf("\n");
 }
 
+printf("\n");
+
+// formula of a - b
+ for(i=0;i<n1;i++){
+    for(j=0;j<n2;j++){
+       c[i][j] = a[i][j] - b[i][j];
+    }
+}
+// A - B
+
+printf("\n");
+
+ printf("A - B Matrix is: \n");
+ for(i=0;i<n1;i++){
+    for(j=0;j<n2;j++){
+        printf("%d  ", c[i][j]);
+    }
+    printf("\n");
+}
+
+
 return 0;
 }
