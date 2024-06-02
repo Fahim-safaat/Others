@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main(){
+    printf("Enter size of a matrix: ");
+    int n1,n2;
+    scanf("%d %d",&n1,&n2);
+    int a[100][100],i,j;
+
+        printf("Enter the element of a matrix: ");
+
+    //input
+    for(i=0;i<n1;i++){
+        for(j=0;j<n2;j++){
+                printf("Enter thee  element [%d] [%d] ", i,j);
+            scanf("%d", &a[i][j]);
+        }
+    }
+    //output
+    printf("Matrix is : \n");
+    for(i=0;i<n1;i++){
+        for(j=0;j<n2;j++){
+            printf("%d  ", a[i][j]);
+        }
+        printf ("\n");
+    }
+ return 0;
+}
+
