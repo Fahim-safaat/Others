@@ -28,7 +28,7 @@ int main(){
     }
 }
 
-//Transpose of
+//Transpose of a
  printf("Transpose of A Matrix is: \n");
  for(i=0;i<n1;i++){
     for(j=0;j<n2;j++){
